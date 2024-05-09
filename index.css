@@ -338,5 +338,9 @@ p{
 @media(max-width:400px) {
     .student-container-1{
         width: 166px;
+        gap: 0px;
+    }
+    .slide-container{
+        gap: 25px;
     }
 }
