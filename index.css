@@ -171,6 +171,7 @@ p{
 .slide-logo{
     height: 50px;
     width: 10px;
+    cursor: pointer;
 }
 .slide-img{
     height: 200px;
@@ -199,6 +200,53 @@ p{
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+  .cards-container{
+    margin: 60px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .bg-blue{
+    background-color: #5183B8;
+    color: white;
+  }
+
+  .bg-gray{
+    background-color: #F7F7F7;
+  }
+  .bg-gray img{
+    filter: invert(1);
+  }
+  .card-explore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .card-heading{
+    font-size: 16px;
+  }
+  .card-text{
+    font-size: 14px;
+  }
+
+
+
+
+
+
+
 
 @media(max-width:1200px) {
     /* css for navbar */
@@ -307,6 +355,13 @@ p{
         width: 250px;
         
     }
+    .cards-container{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .card{
+        height: 300px;
+    }
 
 }
 @media(max-width:600px) {
@@ -331,6 +386,9 @@ p{
         margin: 20px;
         padding: 50px 0px;
     }
+    .cards-container{
+        margin: 20px;
+    }
 
 
 }
@@ -342,5 +400,8 @@ p{
     }
     .slide-container{
         gap: 25px;
+    }
+    .logo-container{
+        gap: 2px;
     }
 }
